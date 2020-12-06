@@ -1,0 +1,5 @@
+version: "Swift version 5.3 (swift-5.3-RELEASE)"
+options: "665d5936482229aebe81850111fa0e11"
+build_time: [1607276531, 422838611]
+inputs:
+  "/home/jonathan/swift/practicas/echo-udp/Sources/echo-client/main.swift": [1606908744, 0]

@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/master.swiftdeps"
+  },
+  "/home/jonathan/swift/practicas/echo-udp/.build/checkouts/BlueSocket/Sources/Socket/Socket.swift": {
+    "dependencies": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket.d",
+    "object": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket.swift.o",
+    "swiftmodule": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket~partial.swiftmodule",
+    "swift-dependencies": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket.swiftdeps"
+  },
+  "/home/jonathan/swift/practicas/echo-udp/.build/checkouts/BlueSocket/Sources/Socket/SocketProtocols.swift": {
+    "dependencies": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketProtocols.d",
+    "object": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketProtocols.swift.o",
+    "swiftmodule": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketProtocols~partial.swiftmodule",
+    "swift-dependencies": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketProtocols.swiftdeps"
+  },
+  "/home/jonathan/swift/practicas/echo-udp/.build/checkouts/BlueSocket/Sources/Socket/SocketUtils.swift": {
+    "dependencies": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketUtils.d",
+    "object": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketUtils.swift.o",
+    "swiftmodule": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketUtils~partial.swiftmodule",
+    "swift-dependencies": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketUtils.swiftdeps"
+  }
+}

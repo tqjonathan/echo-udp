@@ -1,0 +1,134 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "Socket-debug.module": ["<Socket-debug.module>"]
+  "echo-client-debug.exe": ["<echo-client-debug.exe>"]
+  "echo-client-debug.module": ["<echo-client-debug.module>"]
+  "echo-server-debug.exe": ["<echo-server-debug.exe>"]
+  "echo-server-debug.module": ["<echo-server-debug.module>"]
+  "main": ["<echo-client-debug.exe>","<echo-client-debug.module>","<echo-server-debug.exe>","<echo-server-debug.module>"]
+  "test": ["<echo-client-debug.exe>","<echo-client-debug.module>","<echo-server-debug.exe>","<echo-server-debug.module>"]
+default: "main"
+nodes:
+  "/home/jonathan/swift/practicas/echo-udp/Sources/echo-client/":
+    is-directory-structure: true
+  "/home/jonathan/swift/practicas/echo-udp/Sources/echo-server/":
+    is-directory-structure: true
+commands:
+  "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket.swiftmodule.o":
+    tool: shell
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.swiftmodule"]
+    outputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket.swiftmodule.o"]
+    description: "Wrapping AST for Socket for debugging"
+    args: ["/home/jonathan/swift/Swift/usr/bin/swiftc","-modulewrap","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.swiftmodule","-o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build/echo_client.swiftmodule.o":
+    tool: shell
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.swiftmodule"]
+    outputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build/echo_client.swiftmodule.o"]
+    description: "Wrapping AST for echo-client for debugging"
+    args: ["/home/jonathan/swift/Swift/usr/bin/swiftc","-modulewrap","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.swiftmodule","-o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build/echo_client.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.build/echo_server.swiftmodule.o":
+    tool: shell
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.swiftmodule"]
+    outputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.build/echo_server.swiftmodule.o"]
+    description: "Wrapping AST for echo-server for debugging"
+    args: ["/home/jonathan/swift/Swift/usr/bin/swiftc","-modulewrap","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.swiftmodule","-o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.build/echo_server.swiftmodule.o","-target","x86_64-unknown-linux-gnu"]
+
+  "<Socket-debug.module>":
+    tool: phony
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketProtocols.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketUtils.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.swiftmodule"]
+    outputs: ["<Socket-debug.module>"]
+
+  "<echo-client-debug.exe>":
+    tool: phony
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo-client"]
+    outputs: ["<echo-client-debug.exe>"]
+
+  "<echo-client-debug.module>":
+    tool: phony
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build/main.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.swiftmodule"]
+    outputs: ["<echo-client-debug.module>"]
+
+  "<echo-server-debug.exe>":
+    tool: phony
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo-server"]
+    outputs: ["<echo-server-debug.exe>"]
+
+  "<echo-server-debug.module>":
+    tool: phony
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.build/main.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.swiftmodule"]
+    outputs: ["<echo-server-debug.module>"]
+
+  "C.Socket-debug.module":
+    tool: swift-compiler
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/.build/checkouts/BlueSocket/Sources/Socket/Socket.swift","/home/jonathan/swift/practicas/echo-udp/.build/checkouts/BlueSocket/Sources/Socket/SocketProtocols.swift","/home/jonathan/swift/practicas/echo-udp/.build/checkouts/BlueSocket/Sources/Socket/SocketUtils.swift"]
+    outputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketProtocols.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketUtils.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.swiftmodule"]
+    executable: "/home/jonathan/swift/Swift/usr/bin/swiftc"
+    module-name: "Socket"
+    module-output-path: "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.swiftmodule"
+    import-paths: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug"]
+    temps-path: "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build"
+    objects: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketProtocols.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketUtils.swift.o"]
+    other-args: ["-target","x86_64-unknown-linux-gnu","-swift-version","5","-enable-batch-mode","-index-store-path","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-g","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-color-diagnostics"]
+    sources: ["/home/jonathan/swift/practicas/echo-udp/.build/checkouts/BlueSocket/Sources/Socket/Socket.swift","/home/jonathan/swift/practicas/echo-udp/.build/checkouts/BlueSocket/Sources/Socket/SocketProtocols.swift","/home/jonathan/swift/practicas/echo-udp/.build/checkouts/BlueSocket/Sources/Socket/SocketUtils.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 4
+
+  "C.echo-client-debug.exe":
+    tool: shell
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket.swiftmodule.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketProtocols.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketUtils.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build/echo_client.swiftmodule.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build/main.swift.o"]
+    outputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo-client"]
+    description: "Linking ./.build/x86_64-unknown-linux-gnu/debug/echo-client"
+    args: ["/home/jonathan/swift/Swift/usr/bin/swiftc","-L","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug","-o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo-client","-module-name","echo_client","-emit-executable","-Xlinker","-rpath=$ORIGIN","@/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo-client.product/Objects.LinkFileList","-target","x86_64-unknown-linux-gnu","-L","/home/jonathan/swift/Swift/usr/lib"]
+
+  "C.echo-client-debug.module":
+    tool: swift-compiler
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/Sources/echo-client/main.swift","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.swiftmodule"]
+    outputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build/main.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.swiftmodule"]
+    executable: "/home/jonathan/swift/Swift/usr/bin/swiftc"
+    module-name: "echo_client"
+    module-output-path: "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.swiftmodule"
+    import-paths: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug"]
+    temps-path: "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build"
+    objects: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build/main.swift.o"]
+    other-args: ["-target","x86_64-unknown-linux-gnu","-swift-version","5","-enable-batch-mode","-index-store-path","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-g","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-color-diagnostics"]
+    sources: ["/home/jonathan/swift/practicas/echo-udp/Sources/echo-client/main.swift"]
+    is-library: false
+    enable-whole-module-optimization: false
+    num-threads: 4
+
+  "C.echo-server-debug.exe":
+    tool: shell
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/Socket.swiftmodule.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketProtocols.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.build/SocketUtils.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.build/echo_server.swiftmodule.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.build/main.swift.o"]
+    outputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo-server"]
+    description: "Linking ./.build/x86_64-unknown-linux-gnu/debug/echo-server"
+    args: ["/home/jonathan/swift/Swift/usr/bin/swiftc","-L","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug","-o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo-server","-module-name","echo_server","-emit-executable","-Xlinker","-rpath=$ORIGIN","@/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo-server.product/Objects.LinkFileList","-target","x86_64-unknown-linux-gnu","-L","/home/jonathan/swift/Swift/usr/lib"]
+
+  "C.echo-server-debug.module":
+    tool: swift-compiler
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/Sources/echo-server/main.swift","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.swiftmodule"]
+    outputs: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.build/main.swift.o","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.swiftmodule"]
+    executable: "/home/jonathan/swift/Swift/usr/bin/swiftc"
+    module-name: "echo_server"
+    module-output-path: "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.swiftmodule"
+    import-paths: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug"]
+    temps-path: "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.build"
+    objects: ["/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_server.build/main.swift.o"]
+    other-args: ["-target","x86_64-unknown-linux-gnu","-swift-version","5","-enable-batch-mode","-index-store-path","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/index/store","-Onone","-enable-testing","-g","-j4","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/ModuleCache","-parseable-output","-color-diagnostics"]
+    sources: ["/home/jonathan/swift/practicas/echo-udp/Sources/echo-server/main.swift"]
+    is-library: false
+    enable-whole-module-optimization: false
+    num-threads: 4
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/home/jonathan/swift/practicas/echo-udp/Sources/echo-client/","/home/jonathan/swift/practicas/echo-udp/Sources/echo-server/","/home/jonathan/swift/practicas/echo-udp/Package.swift","/home/jonathan/swift/practicas/echo-udp/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

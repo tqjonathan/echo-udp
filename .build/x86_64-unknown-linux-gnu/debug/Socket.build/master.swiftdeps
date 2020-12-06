@@ -1,0 +1,7 @@
+version: "Swift version 5.3 (swift-5.3-RELEASE)"
+options: "902d833aeed6c5512943cb27450338bb"
+build_time: [1607276526, 878186894]
+inputs:
+  "/home/jonathan/swift/practicas/echo-udp/.build/checkouts/BlueSocket/Sources/Socket/Socket.swift": [1607275571, 570225225]
+  "/home/jonathan/swift/practicas/echo-udp/.build/checkouts/BlueSocket/Sources/Socket/SocketProtocols.swift": [1607275571, 570225225]
+  "/home/jonathan/swift/practicas/echo-udp/.build/checkouts/BlueSocket/Sources/Socket/SocketUtils.swift": [1607275571, 570225225]

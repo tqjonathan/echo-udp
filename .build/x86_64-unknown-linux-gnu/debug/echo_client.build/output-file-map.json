@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build/master.swiftdeps"
+  },
+  "/home/jonathan/swift/practicas/echo-udp/Sources/echo-client/main.swift": {
+    "dependencies": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build/main.d",
+    "object": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build/main.swift.o",
+    "swiftmodule": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build/main~partial.swiftmodule",
+    "swift-dependencies": "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/echo_client.build/main.swiftdeps"
+  }
+}

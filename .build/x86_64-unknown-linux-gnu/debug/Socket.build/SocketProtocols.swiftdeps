@@ -1,0 +1,174 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SocketReader"
+- "SocketWriter"
+- "SSLServiceDelegate"
+- "SSLError"
+provides-nominal:
+- "6Socket0A6ReaderP"
+- "6Socket0A6WriterP"
+- "6Socket18SSLServiceDelegateP"
+- "6Socket8SSLErrorO"
+provides-member:
+- ["6Socket0A6ReaderP", ""]
+- ["6Socket0A6WriterP", ""]
+- ["6Socket18SSLServiceDelegateP", ""]
+- ["6Socket8SSLErrorO", ""]
+depends-top-level:
+- "Bool"
+- "CustomStringConvertible"
+- "Data"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "NSData"
+- "NSMutableData"
+- "SSLError"
+- "SSLServiceDelegate"
+- "Socket"
+- "SocketReader"
+- "SocketWriter"
+- "String"
+- !private "StringLiteralType"
+- "Swift"
+- "UnsafeMutableRawPointer"
+- "UnsafeRawPointer"
+depends-member:
+- !private ["s18AdditiveArithmeticP", ""]
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["Sz", ""]
+- !private ["Sz", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["SL", ""]
+- !private ["SL", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Int"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_code"]
+- ["s23CustomStringConvertibleP", "_domain"]
+- ["s23CustomStringConvertibleP", "_userInfo"]
+- ["s23CustomStringConvertibleP", "code"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "domain"]
+- ["s23CustomStringConvertibleP", "fail"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "retryNeeded"]
+- ["s23CustomStringConvertibleP", "success"]
+- ["s23CustomStringConvertibleP", "userInfo"]
+- !private ["Se", "init"]
+- !private ["SE", "init"]
+- !private ["SQ", ""]
+- !private ["SQ", "init"]
+- !private ["s5ErrorP", "Int"]
+- ["s5ErrorP", ""]
+- ["s5ErrorP", "_code"]
+- ["s5ErrorP", "_domain"]
+- ["s5ErrorP", "_userInfo"]
+- ["s5ErrorP", "code"]
+- ["s5ErrorP", "description"]
+- ["s5ErrorP", "domain"]
+- ["s5ErrorP", "fail"]
+- ["s5ErrorP", "retryNeeded"]
+- ["s5ErrorP", "success"]
+- ["s5ErrorP", "userInfo"]
+- !private ["s27ExpressibleByIntegerLiteralP", ""]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SH", ""]
+- !private ["SH", "init"]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", ""]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["Sj", ""]
+- !private ["Sj", "init"]
+- !private ["s10SIMDScalarP", "init"]
+- ["6Socket8SSLErrorO", "Int"]
+- ["6Socket8SSLErrorO", "String"]
+- ["6Socket8SSLErrorO", ""]
+- ["6Socket8SSLErrorO", "_code"]
+- ["6Socket8SSLErrorO", "_domain"]
+- ["6Socket8SSLErrorO", "_userInfo"]
+- ["6Socket8SSLErrorO", "code"]
+- ["6Socket8SSLErrorO", "description"]
+- ["6Socket8SSLErrorO", "domain"]
+- ["6Socket8SSLErrorO", "errCode"]
+- ["6Socket8SSLErrorO", "fail"]
+- ["6Socket8SSLErrorO", "retryNeeded"]
+- ["6Socket8SSLErrorO", "success"]
+- ["6Socket8SSLErrorO", "userInfo"]
+- ["6Socket18SSLServiceDelegateP", "Bool"]
+- ["6Socket18SSLServiceDelegateP", "Int"]
+- ["6Socket18SSLServiceDelegateP", "Socket"]
+- ["6Socket18SSLServiceDelegateP", "String"]
+- ["6Socket18SSLServiceDelegateP", "UnsafeMutableRawPointer"]
+- ["6Socket18SSLServiceDelegateP", "UnsafeRawPointer"]
+- ["6Socket18SSLServiceDelegateP", "addSupportedAlpnProtocol"]
+- ["6Socket18SSLServiceDelegateP", "deinitialize"]
+- ["6Socket18SSLServiceDelegateP", "initialize"]
+- ["6Socket18SSLServiceDelegateP", "negotiatedAlpnProtocol"]
+- ["6Socket18SSLServiceDelegateP", "onAccept"]
+- ["6Socket18SSLServiceDelegateP", "onConnect"]
+- ["6Socket18SSLServiceDelegateP", "recv"]
+- ["6Socket18SSLServiceDelegateP", "send"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", ""]
+- !private ["s13SignedNumericP", "init"]
+- ["6Socket0A6ReaderP", "Data"]
+- ["6Socket0A6ReaderP", "Int"]
+- ["6Socket0A6ReaderP", "NSMutableData"]
+- ["6Socket0A6ReaderP", "String"]
+- ["6Socket0A6ReaderP", "read"]
+- ["6Socket0A6ReaderP", "readString"]
+- ["6Socket0A6WriterP", "Data"]
+- ["6Socket0A6WriterP", "Int"]
+- ["6Socket0A6WriterP", "NSData"]
+- ["6Socket0A6WriterP", "String"]
+- ["6Socket0A6WriterP", "write"]
+- !private ["Sx", ""]
+- !private ["Sx", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "Sz"
+- !private "s7CVarArgP"
+- !private "SL"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- "s5ErrorP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SH"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "Sj"
+- !private "s10SIMDScalarP"
+- "6Socket8SSLErrorO"
+- "6Socket18SSLServiceDelegateP"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- "6Socket0A6ReaderP"
+- "6Socket0A6WriterP"
+- !private "Sx"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/home/jonathan/swift/Swift/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/home/jonathan/swift/Swift/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/home/jonathan/swift/Swift/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/home/jonathan/swift/Swift/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/home/jonathan/swift/Swift/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/home/jonathan/swift/Swift/usr/lib/swift/linux/x86_64/glibc.modulemap"
+interface-hash: "2c47bf9391963a23c5ed8e7983fcd8d7"

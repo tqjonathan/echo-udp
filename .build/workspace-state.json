@@ -1,0 +1,1 @@
+{"object": {"artifacts": [], "dependencies": [{"basedOn": null, "packageRef": {"identity": "bluesocket", "kind": "remote", "name": "Socket", "path": "https://github.com/Kitura/BlueSocket.git"}, "state": {"checkoutState": {"branch": null, "revision": "c9894fd117457f1d006575fbfb2fdfd6f79eac03", "version": "1.0.200"}, "name": "checkout"}, "subpath": "BlueSocket"}]}, "version": 4}

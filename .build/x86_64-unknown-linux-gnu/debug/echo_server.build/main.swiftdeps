@@ -1,0 +1,210 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "port"
+provides-nominal:
+provides-member:
+depends-top-level:
+- "BooleanLiteralType"
+- "Data"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "Socket"
+- "String"
+- "StringLiteralType"
+- "UTF8"
+- "UnicodeScalarType"
+- "port"
+- "print"
+depends-member:
+- ["SK", ""]
+- ["SK", "init"]
+- ["SK", "removeAll"]
+- ["Sl", ""]
+- ["Sl", "_copyToContiguousArray"]
+- ["Sl", "init"]
+- ["Sl", "removeAll"]
+- ["Sl", "underestimatedCount"]
+- ["SL", ""]
+- ["SL", "init"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- ["10Foundation15ContiguousBytesP", "removeAll"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "removeAll"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "removeAll"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "appendInterpolation"]
+- ["s23CustomStringConvertibleP", "appendLiteral"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "removeAll"]
+- ["10Foundation4DataV", "init"]
+- ["10Foundation4DataV", "removeAll"]
+- ["10Foundation12DataProtocolP", ""]
+- ["10Foundation12DataProtocolP", "init"]
+- ["10Foundation12DataProtocolP", "removeAll"]
+- ["Se", "init"]
+- ["Se", "removeAll"]
+- ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- ["s26DefaultStringInterpolationV", "appendLiteral"]
+- ["SE", "init"]
+- ["SE", "removeAll"]
+- ["SQ", ""]
+- ["SQ", "datagram"]
+- ["SQ", "inet"]
+- ["SQ", "init"]
+- ["SQ", "removeAll"]
+- ["SQ", "udp"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
+- ["s32ExpressibleByStringInterpolationP", ""]
+- ["s32ExpressibleByStringInterpolationP", "init"]
+- ["s26ExpressibleByStringLiteralP", ""]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["SH", ""]
+- ["SH", "datagram"]
+- ["SH", "inet"]
+- ["SH", "init"]
+- ["SH", "removeAll"]
+- ["SH", "udp"]
+- ["s25LosslessStringConvertibleP", ""]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["SM", ""]
+- ["SM", "init"]
+- ["SM", "removeAll"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- ["10Foundation19MutableDataProtocolP", "removeAll"]
+- ["6SocketAAC14ProtocolFamilyO", "inet"]
+- ["Sk", ""]
+- ["Sk", "init"]
+- ["Sk", "removeAll"]
+- ["Sm", ""]
+- ["Sm", "_customRemoveLast"]
+- ["Sm", "append"]
+- ["Sm", "init"]
+- ["Sm", "insert"]
+- ["Sm", "remove"]
+- ["Sm", "removeAll"]
+- ["Sm", "removeFirst"]
+- ["Sm", "removeSubrange"]
+- ["Sm", "replaceSubrange"]
+- ["Sm", "reserveCapacity"]
+- ["Sm", "subscript"]
+- ["SY", "udp"]
+- ["10Foundation20ReferenceConvertibleP", "init"]
+- ["10Foundation20ReferenceConvertibleP", "removeAll"]
+- ["ST", ""]
+- ["ST", "_copyContents"]
+- ["ST", "_copyToContiguousArray"]
+- ["ST", "_customContainsEquatableElement"]
+- ["ST", "init"]
+- ["ST", "makeIterator"]
+- ["ST", "removeAll"]
+- ["ST", "underestimatedCount"]
+- ["ST", "withContiguousStorageIfAvailable"]
+- ["6SocketAAC", "create"]
+- ["6SocketAAC", "hostnameAndPort"]
+- ["6SocketAAC", "listen"]
+- ["6SocketAAC", "readDatagram"]
+- ["6SocketAAC", "write"]
+- ["6SocketAAC0A8ProtocolO", "udp"]
+- ["6Socket0A6ReaderP", "create"]
+- ["6Socket0A6ReaderP", "hostnameAndPort"]
+- ["6Socket0A6ReaderP", "listen"]
+- ["6Socket0A6ReaderP", "readDatagram"]
+- ["6Socket0A6ReaderP", "write"]
+- ["6SocketAAC0A4TypeO", "datagram"]
+- ["6Socket0A6WriterP", "create"]
+- ["6Socket0A6WriterP", "hostnameAndPort"]
+- ["6Socket0A6WriterP", "listen"]
+- ["6Socket0A6WriterP", "readDatagram"]
+- ["6Socket0A6WriterP", "write"]
+- ["SS", "init"]
+- ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- ["s27StringInterpolationProtocolP", "appendLiteral"]
+- ["s27StringInterpolationProtocolP", "init"]
+- ["Sy", "init"]
+- ["s16TextOutputStreamP", ""]
+- ["s16TextOutputStreamP", "appendInterpolation"]
+- ["s16TextOutputStreamP", "appendLiteral"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", ""]
+- ["s20TextOutputStreamableP", "init"]
+- ["10Foundation13_CFBridgeableP", "init"]
+- ["10Foundation13_CFBridgeableP", "removeAll"]
+- ["s30_CustomPlaygroundQuickLookableP", "init"]
+- ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s19_HasContiguousBytesP", "init"]
+- ["10Foundation13_NSBridgeableP", "init"]
+- ["10Foundation13_NSBridgeableP", "removeAll"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "removeAll"]
+depends-nominal:
+- "SK"
+- "Sl"
+- "SL"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation4DataV"
+- "10Foundation12DataProtocolP"
+- "Se"
+- "s26DefaultStringInterpolationV"
+- "SE"
+- "SQ"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
+- "6SocketAAC14ProtocolFamilyO"
+- "Sk"
+- "Sm"
+- "SY"
+- "10Foundation20ReferenceConvertibleP"
+- "ST"
+- "6SocketAAC"
+- "6SocketAAC0A8ProtocolO"
+- "6Socket0A6ReaderP"
+- "6SocketAAC0A4TypeO"
+- "6Socket0A6WriterP"
+- "SS"
+- "s27StringInterpolationProtocolP"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "10Foundation13_CFBridgeableP"
+- "s30_CustomPlaygroundQuickLookableP"
+- "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s19_HasContiguousBytesP"
+- "10Foundation13_NSBridgeableP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/home/jonathan/swift/Swift/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/home/jonathan/swift/Swift/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/home/jonathan/swift/Swift/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/home/jonathan/swift/practicas/echo-udp/.build/x86_64-unknown-linux-gnu/debug/Socket.swiftmodule"
+- "/home/jonathan/swift/Swift/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/home/jonathan/swift/Swift/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/home/jonathan/swift/Swift/usr/lib/swift/linux/x86_64/glibc.modulemap"
+interface-hash: "9488170f185233c8481b7d6f1966e8d3"

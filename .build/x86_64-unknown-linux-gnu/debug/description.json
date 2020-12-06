@@ -1,0 +1,16 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "swiftTargetMap" : {
+    "C.echo-client-debug.module" : "echo-client",
+    "C.echo-server-debug.module" : "echo-server",
+    "C.Socket-debug.module" : "Socket"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}
